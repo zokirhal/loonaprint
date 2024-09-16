@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_components_call_to_actions",
+  "info": {
+    "displayName": "call_to_action"
+  },
+  "options": {},
+  "attributes": {
+    "cta_title": {
+      "type": "string"
+    },
+    "cta_desc": {
+      "type": "string"
+    },
+    "cta_img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

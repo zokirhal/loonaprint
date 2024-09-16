@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "header_phones",
+  "info": {
+    "singularName": "header-phone",
+    "pluralName": "header-phones",
+    "displayName": "Телефон номер"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "header_phone_number": {
+      "type": "string"
+    }
+  }
+}

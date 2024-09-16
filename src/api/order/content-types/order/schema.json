@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ordres",
+  "info": {
+    "singularName": "order",
+    "pluralName": "ordres",
+    "displayName": "Заказы",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "form_name": {
+      "type": "string"
+    },
+    "form_number": {
+      "type": "integer",
+      "max": 999999999999999
+    },
+    "form_product_name": {
+      "type": "string"
+    },
+    "form_product_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Главная страница",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cover_title": {
+      "type": "string"
+    },
+    "cover_desc": {
+      "type": "text"
+    },
+    "call_to_action": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.call-to-action"
+    },
+    "cover_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.faq"
+    }
+  }
+}

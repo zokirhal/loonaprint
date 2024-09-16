@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contactforms",
+  "info": {
+    "singularName": "contactform",
+    "pluralName": "contactforms",
+    "displayName": "Запросы"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contactform_name": {
+      "type": "string"
+    },
+    "contactform_number": {
+      "type": "integer"
+    }
+  }
+}

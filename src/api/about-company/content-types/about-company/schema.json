@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_companies",
+  "info": {
+    "singularName": "about-company",
+    "pluralName": "about-companies",
+    "displayName": "О компании",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "about_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "about_desc": {
+      "type": "text"
+    }
+  }
+}
