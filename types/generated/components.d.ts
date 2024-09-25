@@ -4,10 +4,20 @@ export interface ComponentsPortfolio extends Schema.Component {
   collectionName: 'components_components_portfolios';
   info: {
     displayName: 'portfolio';
+    description: '';
+  };
+  attributes: {
+    port_img: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface ComponentsPortfolioList extends Schema.Component {
+  collectionName: 'components_components_portfolio_lists';
+  info: {
+    displayName: 'Portfolio_list';
   };
   attributes: {
     port_list: Attribute.String;
-    port_img: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
   };
 }
 
@@ -38,6 +48,7 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'components.portfolio': ComponentsPortfolio;
+      'components.portfolio-list': ComponentsPortfolioList;
       'components.faq': ComponentsFaq;
       'components.call-to-action': ComponentsCallToAction;
     }

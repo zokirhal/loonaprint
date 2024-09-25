@@ -38,6 +38,28 @@
       "type": "component",
       "repeatable": true,
       "component": "components.faq"
+    },
+    "seo_keywords": {
+      "type": "text"
+    },
+    "seo_description": {
+      "type": "text"
+    },
+    "seo_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "meta_header": {
+      "type": "string"
+    },
+    "meta_body": {
+      "type": "string"
     }
   }
 }

@@ -988,6 +988,11 @@ export interface ApiHomepageHomepage extends Schema.SingleType {
     call_to_action: Attribute.Component<'components.call-to-action', true>;
     cover_img: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     faq: Attribute.Component<'components.faq', true>;
+    seo_keywords: Attribute.Text;
+    seo_description: Attribute.Text;
+    seo_img: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    meta_header: Attribute.String;
+    meta_body: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1027,7 +1032,7 @@ export interface ApiOrderOrder extends Schema.CollectionType {
         number
       >;
     form_product_name: Attribute.String;
-    form_product_img: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    form_product_img: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1095,6 +1100,7 @@ export interface ApiServiceService extends Schema.CollectionType {
     singularName: 'service';
     pluralName: 'services';
     displayName: '\u0423\u0441\u043B\u0443\u0433\u0438';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1103,6 +1109,7 @@ export interface ApiServiceService extends Schema.CollectionType {
     service_title: Attribute.String;
     service_desc: Attribute.String;
     service_portfolio: Attribute.Component<'components.portfolio', true>;
+    listing: Attribute.Component<'components.portfolio-list', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

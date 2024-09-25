@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_components_portfolio_lists",
+  "info": {
+    "displayName": "Portfolio_list"
+  },
+  "options": {},
+  "attributes": {
+    "port_list": {
+      "type": "string"
+    }
+  }
+}
